@@ -12,6 +12,8 @@ body {
     color: $text-color;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    
 }
 
 .container {
@@ -21,6 +23,7 @@ body {
     background-color: white;
     border-radius: $border-radius;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 
     h1 {
         text-align: center;
@@ -34,39 +37,18 @@ body {
         font-weight: bold;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
+    input{
         width: 100%;
-        padding: 10px;
+        padding: 5px;
         margin: 5px 0 15px;
         border: 1px solid #ccc;
         border-radius: $border-radius;
         font-size: 16px;
-        transition: border-color 0.3s ease;
+        ;
 
-        &:focus {
-            border-color: $primary-color;
-            outline: none;
-            box-shadow: 0 0 5px rgba($primary-color, 0.5);
-        }
     }
 
-    button {
-        background-color: $primary-color;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        border-radius: $border-radius;
-        cursor: pointer;
-        font-size: 16px;
-        width: 100%;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-            background-color: darken($primary-color, 10%);
-        }
-    }
+    
 }
 
 footer {
@@ -74,6 +56,8 @@ footer {
     color: $footer-text-color;
     padding: 20px;
     text-align: center;
+    width: 100%;
+    margin-top: 155px;
 
     h2 {
         margin: 0 0 10px;
