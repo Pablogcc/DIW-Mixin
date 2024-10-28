@@ -1,0 +1,86 @@
+$primary-color: #000000;
+$background-color: #ffa0a0;
+$text-color: #333;
+$footer-background: #333;
+$footer-text-color: #fff;
+$border-radius: 5px;
+
+// Estilos generales
+body {
+    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px;
+        border: 1px solid #ccc;
+        border-radius: $border-radius;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: $primary-color;
+            outline: none;
+            box-shadow: 0 0 5px rgba($primary-color, 0.5);
+        }
+    }
+
+    button {
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: $border-radius;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
+
+footer {
+    background-color: $footer-background;
+    color: $footer-text-color;
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+        margin: 0 0 10px;
+    }
+
+    p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
